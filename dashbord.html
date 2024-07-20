@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/dashbord.css">
+    <link rel="stylesheet" href="/css/nav_bar.css">
+    <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+          />
+          <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+          />
+          <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+          />
+          <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+          />
+          <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+          />
+</head>
+<body>
+    <!-- header structure -->
+         <header>
+            <!-- nav structure -->
+           <nav>
+             <ul>
+               <li>
+                 <i class="fa-sharp fa-thin fa-bell" style="color: #000000"></i>
+               </li>
+               <li>
+                 <span
+                   style="
+                     color: #fff;
+                     padding: 10px;
+                     border-radius: 50px;
+                     background: #000;
+                     font-size: 10px;
+                     margin-right: 10px;
+                   "
+                   >UA</span
+                 ><a href="#">Usman</a>
+               </li>
+               <li>
+                 <a href=""><i class="fa-thin fa-caret-down"></i></a>
+               </li>
+             </ul>
+           </nav>
+           <!-- nav-header end -->
+         </header>
+    <!-- header end  -->
+    <aside>
+           <div class="side-bar-nav">
+             <ul>
+               <li>
+                 <a href="#"
+                   ><i
+                     class="fa-light fa-objects-column"
+                     style="color: #ff7b00"
+                   ></i
+                 ></a>
+               </li>
+               <li>
+                 <a href="#"
+                   ><i
+                     class="fa-regular fa-calendar-lines"
+                     style="color: #ff5900"
+                   ></i
+                 ></a>
+               </li>
+               <li>
+                 <a href="#"
+                   ><i class="fa-regular fa-command" style="color: #ff5900"></i
+                 ></a>
+               </li>
+               <li>
+                 <a href="#"
+                   ><i class="fa-regular fa-briefcase" style="color: #ff5900"></i
+                 ></a>
+               </li>
+               <li>
+                 <a href="#"
+                   ><i
+                     class="fa-regular fa-chart-pie-simple"
+                     style="color: #fa4b00"
+                   ></i
+                 ></a>
+               </li>
+               <li>
+                 <a href="#"
+                   ><i
+                     class="fa-regular fa-gear-complex"
+                     style="color: #fa4b00"
+                   ></i
+                 ></a>
+               </li>
+             </ul>
+       </div>
+       <div class="dashbord-menu">
+           <img src="img/logo2.png" alt="" class="menu-logo">
+           <h4>TRM</h4><br> 
+         <ul>  
+           <li>
+             <a href="#" class="overview active"><i class="fa-sharp fa-light fa-chart-simple active"></i> <span class="active">Overview</span></a></li>  
+           <li>
+            
+             <a href="" id="request"> <i class="fa-light fa-table-list"></i>  Requests</a></li>  
+         </ul>
+       </div>  
+       </aside>
+    <!-- aside icons-bar ends -->
+    <!-- main structure -->
+    <main>
+       <span class="intro">
+         <div>
+           <h4>Welcome, <strong>Usman</strong>!</h4>
+           <p>Take a look at your dashboord and see all pending task.</p>
+         </div>
+         <button class="insp-btn" id="createBtn">
+           <i class="fa-sharp fa-regular fa-plus" style="color: #fff"></i
+           >&nbsp; &nbsp; Create New Inspection
+         </button>
+       </span>
+      <div class="card-div"> 
+       <div class="card all-request">
+         <p>Completed Request</p>
+         <span class="span3">
+           <img src="/img/cardPointer.png" alt="" class="cardpointer" />
+           <h1>114</h1>
+         </span>
+       </div>
+       <div class="card">
+         <p>Completed Request</p>
+         <span class="span3">
+           <img src="/img/cardPointer.png" alt="" class="cardpointer" />
+           <h1>114</h1>
+         </span>
+       </div>
+       <div class="card">
+         <p>Completed Request</p>
+         <span class="span3">
+           <img src="/img/cardPointer.png" alt="" class="cardpointer" />
+           <h1>114</h1>
+         </span>
+       </div>
+       <div class="card">
+         <p>Completed Request</p>
+         <span class="span3">
+           <img src="/img/cardPointer.png" alt="" class="cardpointer" />
+           <h1>114</h1>
+         </span>
+       </div>
+     </div>
+     <div class="tab">
+       <div class="activity-container">
+            <table>
+                <tr class="activity-header">
+                    <td >Activity</td>
+                    <td><a href="#" class="view-all">View all</a></td>
+                </tr>
+                <tr>
+                    <td>You have a property inspection coming up in three days</td>
+                    <td><a href="#" class="activity-action">Set reminder</a></td>
+                </tr>
+                <tr>
+                    <td>Mustapha Omasanya sent a new property inspection for Rovenheight homes</td>
+                    <td><a href="#" class="activity-action">See inspection</a></td>
+                </tr>
+                <tr>
+                    <td>Your scheduled inspection for Gig Logistics is three days overdue</td>
+                    <td><a href="#" class="activity-action">Re-schedule now</a></td>
+                </tr>
+            </table>
+     </div>
+     <!-- ******************** -->
+     <!-- main table -->
+   </main> 
+   <div class="content">
+     <span class="span3"><p><a href="">Creat Inspections</p></a> <a href="" style="text-decoration: none; color: gainsboro;">View all ></a></span><br>
+     <div class="">
+       <div class="table-container">
+         <table>
+             <thead>
+                 <tr>
+                     <th>ID</th>
+                     <th>Name</th>
+                     <th>Class</th>
+                     <th>Inspection method</th>
+                     <th>Officer</th>
+                     <th>Status</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td>10321</td>
+                     <td>GIG Logistics</td>
+                     <td><span class="dot marine"></span> Marine</td>
+                     <td>Digital</td>
+                     <td>Mustapha Omosanya</td>
+                     <td>QUOTE REQUEST</td>
+                 </tr>
+                 <tr>
+                     <td>10321</td>
+                     <td>Shoprite Stores</td>
+                     <td><span class="dot property"></span> Property</td>
+                     <td>Manual</td>
+                     <td>Mustapha Omosanya</td>
+                     <td><span class="status completed" style="color: green;">Completed</span></td>
+                 </tr>
+                 <tr>
+                     <td>10321</td>
+                     <td>Abiodun Abayomi</td>
+                     <td><span class="dot motors"></span> Motors</td>
+                     <td>Digital</td>
+                     <td>Mustapha Omosanya</td>
+                     <td><span class="status ongoing" style="color: orangered;">Ongoing</span></td>
+                 </tr>
+                 <tr>
+                     <td>10321</td>
+                     <td>Ben's Agro Allied</td>
+                     <td><span class="dot agric"></span> Agric</td>
+                     <td>Manual</td>
+                     <td>Mustapha Omosanya</td>
+                     <td>SENT TO ENGINEER</td>
+                 </tr>
+                 <tr>
+                     <td>10321</td>
+                     <td>Abiodun Abayomi</td>
+                     <td><span class="dot band"></span> Band</td>
+                     <td>Digital</td>
+                     <td>Mustapha Omosanya</td>
+                     <td ><span class="status expired" style="color: red;"><i class="fa-sharp fa-light fa-xmark" style="color: #e60a0a;"></i> Link expired</span></td>
+                 </tr>
+                 <tr>
+                     <td>10321</td>
+                     <td>Julius Berger</td>
+                     <td><span class="dot engineering"></span> Engineering</td>
+                     <td>Digital</td>
+                     <td>Mustapha Omosanya</td>
+                     <td><a href="#" class="inspection-link"><i class="fa-regular fa-arrow-turn-left" style="color: #474c57;"></i> Inspection link</a></td>
+                 </tr>
+             </tbody>
+         </table>
+     </div>
+     </div>
+   </div>
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const createBtn = document.getElementById('createBtn');
+      const request = document.getElementById('request');
+  
+      createBtn.addEventListener('click', function() {
+        // Replace 'create.html' with the actual URL of your Create page
+        window.location.href = '/generateInspection.html';
+      });
+      createBtn.addEventListener('click', function() {
+        // Replace 'create.html' with the actual URL of your Create page
+        window.location.href = '/generateInspection.html';
+      });
+    });
+    
+  </script>
+  
+</body>
+</html>

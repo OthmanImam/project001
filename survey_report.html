@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo1.png" type="image/x-icon">
+    <title>Dashbord</title>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    />
+   <link rel="stylesheet" href="/css/survey_report.css">
+   <link rel="stylesheet" href="/css/nav_bar.css">
+   <script src="/js/survey_report.js"></script>
+  
+</head>
+<body>
+    <header>  
+      <nav> 
+        <ul>  
+          <li><i class="fa-sharp fa-thin fa-bell" style="color: #000000;"></i></li> 
+          <li><a href="#">Dashboard</a></li>  
+          <!-- <li><a href="#">Settings</a></li>   -->
+          <li><a href="#">User</a></li>  
+        </ul>  
+      </nav>  
+    </header>  
+    <aside>
+        <div class="side-bar-nav">
+          <ul>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-light fa-objects-column"
+                  style="color: #ff7b00"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-regular fa-calendar-lines"
+                  style="color: #ff5900"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-regular fa-command" style="color: #ff5900"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-regular fa-briefcase" style="color: #ff5900"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-regular fa-chart-pie-simple"
+                  style="color: #fa4b00"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-regular fa-gear-complex"
+                  style="color: #fa4b00"
+                ></i
+              ></a>
+            </li>
+          </ul>
+    </div>
+    <div class="dashbord-menu">
+        <img src="/img/logo2.png" alt="" class="menu-logo">
+        <h4>TRM</h4><br> 
+      <ul>  
+        <li>
+          <a href="#"><i class="fa-sharp fa-light fa-chart-simple"></i> Overview</a></li>  
+        <li>
+         
+          <a href="#"> <i class="fa-light fa-table-list"></i>  Requests</a></li>  
+      </ul>
+    </div>  
+    </aside>
+    <!-- *********************** -->
+      <!--page content starts  -->
+  <div class="content">
+    <h3>Survey Report</h3>
+    <p>See inspections request details</p>
+
+    <!-- survey structure -->
+    <div class="survey-report survey">
+      <div class="details">
+        <div class="container">
+          <div>
+            <img src="/img/report_img.png" alt="">
+            <div class="describer">Property</div>
+          </div>
+          <div class="policy-info">
+              <h1>Rovenheights Properties LTD.</h1>
+              <div class="info">
+                <div class="sub-info">
+                  <div class="info-it">
+                      <strong>Policy Number</strong><br>
+                      ALR12358493
+                  </div>
+                  <div class="info-it">
+                      <strong>Loss Type</strong><br>
+                      Non-Motor
+                  </div>
+                  <div class="info-it">
+                      <strong>Policy Term (Years)</strong><br>
+                      5
+                  </div>
+                </div>
+                <!-- division -->
+                 <div class="sub-inf">
+                  <div class="info-it">
+                      <strong>Expiry Date</strong><br>
+                      19 Dec, 2024
+                  </div>
+                  <div class="info-it">
+                      <strong>Commencement Date</strong><br>
+                      19 Dec, 2019
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+          <div class="policy-progress">
+              <p style="color: rgb(224, 106, 63);">Policy Progress</p>
+              <div id="progress-container">
+                  <svg id="progress-circle" width="150" height="150">
+                      <circle cx="75" cy="75" r="65" stroke="#d9d9d9" stroke-width="10" fill="none"></circle>
+                      <circle id="progress-bar" cx="75" cy="75" r="65" stroke="orange" stroke-width="10" fill="none" stroke-linecap="round"></circle>
+                  </svg>
+                  <div class="inner-circle">
+                      <span id="progress-text">75%</span>
+                  </div>
+              </div>
+              <p>3 Days to Expiry</p>
+          </div>
+      </div>
+      </div>
+    </div>
+    <!-- insured details structure -->
+    <h3>Insured Details</h3>
+    <div class="container2">
+      <div class="tabs">
+          <button class="tab-link active" onclick="openTab(event, 'property-info')">Property Information</button>
+          <button class="tab-link" onclick="openTab(event, 'property-description')">Property Description</button>
+          <button class="tab-link" onclick="openTab(event, 'supporting-docs')">Supporting Document</button>
+      </div>
+
+      <div id="property-info" class="tab-content" style="color: #f1f1f1;">
+          <div class="info">
+              <div class="info-item">
+                  <strong>Insured for</strong><br>
+                  Rovenheight Homes
+              </div>
+              <div class="info-item">
+                  <strong>Insured Name</strong><br>
+                  Rovenheight Homes
+              </div>
+              <div class="info-item">
+                  <strong>Loss estimate</strong><br>
+                  ₦1,200,000
+              </div>
+              <div class="info-item">
+                  <strong>Cause of Loss</strong><br>
+                  Rovenheight Homes
+              </div>
+              <div class="info-item">
+                  <strong>Property Address</strong><br>
+                  No. 16, Rovenheight Homes, Nicon town, Lekki phase 1, Lagos.
+              </div>
+              <div class="info-item">
+                  <strong>City</strong><br>
+                  Lekki
+              </div>
+              <div class="info-item">
+                  <strong>State</strong><br>
+                  Lagos
+              </div>
+          </div>
+      </div>
+
+      <div id="property-description" class="tab-content">
+          <p>Rovenheight homes registered as a LLC building on the 15th of May 2016 is a Grey and White twelve storey building located at No 12 OGUNSANYA DRIVE, ALCOVE ESTATE, LEKKI PHASE 1, LAGOS STATE. The property is owned by Mr. Badmus Akinrele who stands as the insurer of the property.</p>
+      </div>
+
+      <div id="supporting-docs" class="tab-content">
+        <table>
+          <tr>
+            <td>Policy Document</td>
+            <td>25 Aug, 2022 9:00 AM</td>
+            <td> <a href="">View</a></td>
+            <td><a href="">Download</a></td>
+          </tr>
+          <tr>
+            <td>Police report</td>
+            <td>25 Aug, 2022 9:00 AM</td>
+            <td> <a href="">View</a></td>
+            <td><a href="">Download</a></td>
+          </tr>
+          <tr>
+            <td>Attached document 1</td>
+            <td>25 Aug, 2022 9:00 AM</td>
+            <td><a href=""> View</a></td>
+            <td><a href="">Download</a></td>
+          </tr>
+        </table>
+
+        <!-- </div>
+          <p>Supporting documents content goes here.</p>
+      </div> -->
+  </div>
+  <!-- insured details structure end -->
+</body>
+</html>
+ 
