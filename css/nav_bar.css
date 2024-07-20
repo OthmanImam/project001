@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Mulish;
+}
+body {
+  display: grid;
+  grid-template-areas:
+  "aside header header"
+    "aside main main"
+    "aside content content";
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 50px ;
+  height: 100%;
+  @media screen and (25px <= width <=750px) {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    overflow-x: none;
+  }
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+  grid-area: header;
+  background-color: #fff;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  border: 1px solid gainsboro;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+}
+
+header nav li {
+  margin-right: 20px;
+}
+
+header nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+aside {  
+    grid-area: aside;  
+    background-color: #fff; 
+    position: fixed;
+    z-index: 12; 
+    display: grid;  
+    grid-template-columns: 50px 2fr;
+    grid-template-rows: 1fr 2fr;  
+    gap: 10px;  
+    margin-inline-start: -1px;
+    margin-top: -1px;
+    border: 1px solid gainsboro;
+    height: 100%;
+  }  
+  .side-bar-nav{
+      padding-top: 130px;
+      background: #1a1212;
+      font-size: 12px;  
+      grid-row: 1/-1;
+      text-align: center;
+      height: 100%;
+  }
+  aside ul {  
+    list-style: none;  
+    margin: 0;  
+  }  
+    
+  aside li {  
+    margin-bottom: 10px; 
+  }  
+    
+  aside a {  
+      text-decoration: none;  
+      color:black; 
+      width:100%;
+      margin:0;
+      padding:10px 20px 10px 15px;
+      &:hover{
+        background:#fff;
+        transition: 1s;
+      }
+    } 
+    
+    aside i{
+      height:35px;
+      font-size:20px;
+      text-align:center; 
+    }  
+    .dashbord-menu ul li a{
+      color: black;
+      padding-inline-start: 0;
+      &:hover{
+      color: orangered;
+      }
+      .active{
+        color: #ff5733;
+      }
+    }
+  .menu-logo{
+      width: 90%;
+      padding:45px 0 20px 0;
+      margin-bottom: 20px;
+  }
+@media screen and (max-width:600px){
+  body{
+    display: block;
+  }
+  aside{
+    display: none;
+  }
+  
+}

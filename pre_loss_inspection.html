@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo1.png" type="image/x-icon">
+    <title>Create New Inspection</title>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    />
+   <link rel="stylesheet" href="/css/create_inspection.css">
+   <link rel="stylesheet" href="/css/nav_bar.css">
+   <link rel="stylesheet" href="/css/modal.css">
+   <!-- <script src="/js/dashbord3.js"></script> -->
+</head>
+<body>
+    <header>  
+      <nav> 
+        <ul>  
+          <li><i class="fa-sharp fa-thin fa-bell" style="color: #000000;"></i></li> 
+          <li><a href="#">Dashboard</a></li>  
+          <!-- <li><a href="#">Settings</a></li>   -->
+          <li><a href="#">User</a></li>  
+        </ul>  
+      </nav>  
+    </header>  
+    <aside>
+        <div class="side-bar-nav">
+          <ul>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-light fa-objects-column"
+                  style="color: #ff7b00"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-regular fa-calendar-lines"
+                  style="color: #ff5900"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-regular fa-command" style="color: #ff5900"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-regular fa-briefcase" style="color: #ff5900"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-regular fa-chart-pie-simple"
+                  style="color: #fa4b00"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-regular fa-gear-complex"
+                  style="color: #fa4b00"
+                ></i
+              ></a>
+            </li>
+          </ul>
+    </div>
+    <div class="dashbord-menu">
+        <img src="/img/logo2.png" alt="" class="menu-logo">
+        <h4>TRM</h4><br> 
+      <ul>  
+        <li>
+          <a href="#"><i class="fa-sharp fa-light fa-chart-simple"></i> Overview</a></li>  
+        <li>
+         
+          <a href="#"> <i class="fa-light fa-table-list"></i>  Requests</a></li>  
+      </ul>
+    </div>  
+    </aside>
+    <!-- *********************** -->
+      <!-- page content starts  -->
+    <div class="content">
+      <div class="content-header">
+        <span class="intro">
+        <div>
+        <h3>Create New Inspection</h3>
+        <p>See inspections across all business classes</p>
+      </div>
+        <a href="Inspection_list.html"><i class="fa-light fa-chevron-left" style="color: #494f5b;"></i> back to create request</a>
+        </span>  
+       </div>
+       <!-- form opening -->
+       <div class="container">
+           <h4>Pre-Loss Inspection - Property</h4><br><hr><br>
+           <div class="form-row">
+               <div class="form-group">
+                   <label for="policyNumber">Policy Number (optional)</label>
+            <div class="bind">
+                <i class="fa-thin fa-magnifying-glass" style="color: #474d57;"></i>
+                <input type="text" id="policyNumber" name="policyNumber">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="insuredFor">Insured For (optional)</label>
+            <div class="bind">
+                <i class="fa-thin fa-magnifying-glass" style="color: #474d57;"></i>
+                <input type="text" id="policyNumber" name="policyNumber">
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="assignTo">Assign To</label>
+            <div class="bind">
+                <i class="fa-thin fa-magnifying-glass" style="color: #474d57;"></i>
+                <input type="text" id="policyNumber" placeholder="Search a personnel">
+            </div>
+        </div>
+    </div>
+    <hr>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="contactFirstName">Contact First Name</label>
+                <div class="bind">
+                <input type="text" id="contactFirstName" name="contactFirstName">
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="contactLastName">Contact Last Name</label>
+                <div class="bind">
+                    <input type="text" id="contactFirstName" name="contactFirstName">
+                </div>            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="contactPhoneNumber">Contact Phone Number</label>
+                <div class="bind">
+                    <div class="contact">
+                    <select name="" id="" >
+                        <option value="">+234</option>
+                    </select>
+                </div>
+                    <input type="text" id="policyNumber" >
+                </div>
+            </div>
+        
+            <div class="form-group">
+            <label for="contactEmailAddress">Contact Email Address</label>
+            <div class="bind">
+                <input type="text" id="contactEmailAddress" >
+            </div>        </div>
+    </div>
+    <hr>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="riskHouseNumber">Risk House Number</label>
+                <div class="bind">
+                    <input type="text" id="contactEmailAddress" >
+                </div>            </div>
+            <div class="form-group">
+                <label for="riskAddress">Risk Address</label>
+                <div class="bind">
+                    <input type="text" id="contactEmailAddress" >
+                </div>            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="state">State</label>
+                <div class="bind">
+                <select id="state" name="state">
+                    <option value="">Select a state</option>
+                </select>
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="lga">LGA</label>
+                <div class="bind">
+                <select id="lga" name="lga">
+                    <option value="">Select an LGA</option>
+                </select>
+            </div>
+            </div>
+        </div>
+            <hr>
+            <div class="from-group">
+                <label for="lossDescription">Property Description</label><br>
+                <textarea id="propertyDescription" name="propertyDescription" rows="10"></textarea>
+            </div>
+            <div class="form-row">
+                <a href="">Attach document</a>
+            </div>
+            <button class="generate-btn" id="generateBtn">Generate</button>
+          </div>
+        <!-- First Modal -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Send to TMR</h4>
+      </div>
+    <p>Are you sure you want to send this?</p>
+    <div class="modal-footer">
+      <button class="button button-cancel" id="closeModal1">Cancel</button>
+      <button class="button button-submit" id="submitModal1">Submit</button>
+    </div>
+  </div>
+</div>
+
+<!-- Second Modal -->
+<div class="moda" id="modal2">
+  <div class="moda-content2">
+    <a href="" class="closed" id="closeModal2"><i class="fa-light fa-xmark" style="color: #a2a5a9;"></i></a><br><br>
+    <img src="/img/modal-img.png" alt="" class="modal-img"><br>
+    You’ve successfully created new <br>Inspection ID-23321 for PRIME GARDENS 
+    <div class="modal-footer2">
+      <button class="button2 button-cancel2">Go to request list</button>
+      <button class="button2 button-submit2">Create new inspection</button>
+    </div>
+  </div>
+</div>
+  <script src="/js/modal.js"></script>     
+</body>
+</html>
+ 
