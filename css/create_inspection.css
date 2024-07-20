@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");  
+
+  
+ /* ***************************** */
+ .content {  
+  grid-area: content; 
+  width: 100%; 
+  padding: 3em 0em 1em 0em; 
+} 
+.content-header p {
+  color: #7f8c8d;
+  margin-top: 10px;
+}
+ /* **********styling content header */
+  .intro{
+      margin: 10px 0 40px 0;
+      display: flex;
+      justify-content: space-between;
+      padding-inline-start: 55px;
+      .insp-btn{
+          position: relative;
+          padding: 10px;
+          font-size: clamp(15px, 4vw, 10px);
+          background: rgba(255, 122, 0, 1);
+          border: none;
+          color: #fff;
+          border-radius: 5px;
+          animation-duration: 0ms;
+          cursor:pointer;
+      }
+      p,h3{
+        padding-left: 0px;
+      }
+      @media screen and (max-width:1023px) {
+         margin: 10px 0 40px 0;
+         padding-inline-start: 25px;
+      }
+  }
+  
+  /* **************************** */
+/* ********** styling content */
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+/* form styling */
+.container {
+    max-width: 100%;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    align-items: center;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.form-group label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group select {
+    padding: 4px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    max-width: 100%;
+    width: 100%;
+}
+textarea {
+    width: 100%;
+    resize: none;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.form-row .form-group {
+    flex: 0 0 48%;
+}
+.select-group {
+    display: flex;
+}
+.select-group select {
+    flex: 1;
+    margin-right: 5px;
+}
+.select-group select:last-child {
+    margin-right: 0;
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color: orangered;
+    padding: 20px;
+}
+.generate-btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: orangered;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 20px;
+}
+.bind{
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+.contact{
+    width: 80px;
+    font-size: 12px;
+}
+/* Ensure modal is above fixed elements */
+        .modal, .moda {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 2000; /* Ensure this is higher than navbar and header */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        }
+
+        .modal-content, .moda-content2 {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 15px;
+            border: 1px solid #888;
+            justify-content: center;
+            text-align: center;
+            width: 30%; 
+        }
+        .moda-content2 {
+            width: 35%;
+        }
+
+        .modal-header, .modal-footer, .modal-footer2 {
+            padding: 10px;
+            align-items: start;
+        }
+
+        .close, .closed {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover, .close:focus, .closed:hover, .closed:focus {
+            color: black;
+            text-decoration: none;
+        }
+        .modal-img{
+            position: relative;
+            left: 40px;
+        }
+        .closeModal2{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    
+        .button-cancel2, .button-cancel{
+            background-color: #fff;
+            color: gray;
+            border: none;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 4px;
+            cursor: pointer;
+        }
+        .button-cancel2{
+            border: 1px solid gainsboro;
+        }
+        .button-submit2,.button-submit{
+            background-color: #ff5900;
+            color: #ffffff;
+            border: none;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 4px;
+            cursor: pointer;
+        }
+        

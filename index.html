@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Underwriter Dashboard</title>
+    <script src="https://kit.fontawesome.com/49583d57a0.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="image/logo1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="form-side">
+            <div class="logo-container">
+                <img src="/img/logo1.png" alt="logo-image" class="logo-img" />
+            </div>
+            <form id="loginForm">
+                <div class="login-form-intro">
+                    <h2>Adjuster Dashboard</h2>
+                    <p>Welcome. Login to your portal account</p>
+                </div>
+                <div class="input-field">
+                    <h3>Login ID</h3>
+                    <span class="span1">
+                        <input
+                            placeholder="Enter your login ID"
+                            id="login-id"
+                            class="login-id"
+                            type="text"
+                            required
+                        />
+                        <i class="fas fa-user"></i>
+                    </span>
+                </div>
+                <div class="input-field">
+                    <span class="span1">
+                        <h3>Password</h3>
+                        <button
+                            type="button"
+                            class="show"
+                            id="show-password"
+                            onclick="showPassword()"
+                        >
+                            SHOW
+                        </button>
+                    </span>
+                    <span class="span2">
+                        <input
+                            type="password"
+                            id="password1"
+                            class="password-inpt"
+                            placeholder="Enter your password"
+                            required
+                        />
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </div>
+                <div class="keep-me-in">
+                    <label class="keep me-login" id="me-login" for="checkbox">
+                        <input type="checkbox" id="checkbox" class="keep" />
+                        Keep me logged in
+                    </label>
+                    <p class="reset">Reset Password</p>
+                </div>
+                <button type="submit" class="login-btn" id="loginBtn">Login</button>
+            </form>
+        </div>
+        <div class="image-side">
+            <small class="he">Help</small>
+            <div class="customer-note">
+                <div class="note-logo-div">
+                    <img src="/img/logo3.png" alt="" class="note-logo">
+                </div>
+                <p>Manage customers from individual to corporate or group customers.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showPassword() {
+            const passwordInput = document.getElementById("password1");
+            const passwordToggle = document.getElementById("show-password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                passwordToggle.textContent = "HIDE";
+            } else {
+                passwordInput.type = "password";
+                passwordToggle.textContent = "SHOW";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const loginForm = document.getElementById('loginForm');
+
+            loginForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from submitting the traditional way
+                
+                const username = document.getElementById('login-id').value;
+                const password = document.getElementById('password1').value;
+
+                // Here, you can add your login validation logic
+                if (username && password) {
+                    // Redirect to dashboard page
+                    window.location.href = '/dashbord.html'; // Ensure 'dashboard.html' is correct
+                } else {
+                    alert('Please enter a valid username and password.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

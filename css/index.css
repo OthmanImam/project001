@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Mulish;
+      }
+      body {
+        height: 100vh;
+        overflow-x: hidden;
+        width: 100%;
+        padding: 50px;
+        margin: 0 auto;
+        background-color: #fff;
+        @media screen and (25px <= width <=750px) {
+          padding: 0;
+        }
+      }
+      .login-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        @media screen and (25px <= width <=750px) {
+          width: 100%;
+          padding: 0;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+
+      .form-side {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        background: floralwhite;
+        /* flex-basis: 100%;s */
+        padding: 40px;
+      }
+      .logo-img {
+        height: 100px;
+      }
+      .login-form-intro {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        color: rgba(88, 88, 88, 1);
+        font-weight: 500;
+        font-size: 18px;
+        
+      }
+      .input-field {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background: #fff;
+        box-shadow: 0px 20px 70px 0px rgba(0, 0, 0, 0.06);
+        &:hover {
+          border: 1px solid orangered;
+          /* transform:translate(-0px, -0px); */
+          top: 0;
+          bottom: 0;
+          right: 0;
+        }
+      }
+      .span1,
+      .span2 {
+        display: flex;
+        justify-content: space-between;
+      }
+      h3,
+      h4 {
+        font-size: 12px;
+        margin: 0;
+      }
+      h3 {
+        margin-left: 10px;
+      }
+      .show {
+        text-decoration: none;
+        color: orangered;
+        font-size: 10px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        &:hover {
+          color: #337ab7;
+        }
+      }
+      .input-field i {
+        color: #ccc;
+        position: relative;
+        font-size: 14px;
+        margin-right: auto;
+        bottom: -20px;
+      }
+      .input-field input[type="text"],
+      .password-inpt {
+        width: 100%;
+        border: none;
+        margin-top: 10px;
+        outline: none;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .keep-me-in {
+        display: flex;
+        margin-inline-start: 0;
+        cursor: pointer;
+        margin-bottom: 3em;
+      }
+
+      p,
+      .keep {
+        cursor: pointer;
+        font-size: 12px;
+      }
+      .reset {
+        margin-left: auto;
+      }
+      .login-btn {
+        width: 100%;
+        padding: 15px;
+        border-radius: 5px;
+        background: rgba(255, 122, 0, 1);
+        box-shadow: 0px 40px 70px 0px rgba(255, 122, 0, 0.1);
+        border: none;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+      }
+      /* ******************** */
+      /* *****image side styling */
+      .image-side {
+        width: 100%;
+        height: 100%;
+        background: url(/img/image0.png);
+        background-repeat: no-repeat;        
+        margin: 0 uto;
+        @media screen and (25px <= width <=750px) {
+          height: 50px;
+          display: none;
+        }
+
+      }
+      .image-side img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      small{
+        position: absolute;
+        color: rgb(255, 255, 255,1);
+        font-size: 20px;
+        margin-left: 31em;
+        top: 3.5em;
+      }
+      .customer-note{
+        border: 1px solid red;
+        max-width: 100%;
+        width: 80%;
+        height: 15%;
+        display: flex;
+        padding: 10px;
+        background: ghostwhite;
+        align-items: center;
+        border-radius: 5px;
+         gap: 20px;
+         bottom: -505px;
+         left: 65px;
+         position: relative;
+         @media screen and (25px <= width <=750px) {
+          height: 50px;
+          display: block;
+        }
+      }
+      .customer-note p{
+        font-size: 1em;
+        padding: 20px 0;
+        align-items: center;
+        background: #fff;
+        padding-left: 10px;
+        border-radius: 5px;
+      }
+      .note-logo-div{
+        width: 15%;
+        background: ghostwhite;
+        /* padding: 10px; */
+      }
