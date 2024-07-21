@@ -12,7 +12,7 @@
   .intro{
       display: flex;
       justify-content: space-between;
-      padding: 0 40px;
+      padding: 0 30px;
       .insp-btn{
           position: relative;
           height: 3em;
@@ -23,13 +23,15 @@
           color: #fff;
           border-radius: 5px;
           animation-duration: 0ms;
+          display: none;
           cursor:pointer;
           .fa-x{
-            font-size: 30px;
+            font-size: 20px;
             border: 1px solid;
             border-radius: 50%;
             padding: 10px;
-            background: #7f8c8d;
+            color: #7f8c8d;
+            /* background: #7f8c8d; */
           }
       }
   }
@@ -43,6 +45,7 @@
     color: #fff;
     font-weight: 600;
     font-size: 20px;
+    cursor: pointer;
   }
   .generate.orange{
     background: orangered;
@@ -67,9 +70,8 @@
       border-radius: 10px;
       text-align: center;
       margin: auto;
-      /* &:hover{
-        border-color: #fa4b00;
-      } */
+      cursor: pointer;
+      
     }
     .highlight{
       border: 1px solid orangered;
@@ -92,6 +94,7 @@
       margin: auto;
     }
     .dropdown-ops{
+      cursor: pointer;
       width: 100%;
       padding: 5px;
       border: 1px solid rgba(238, 238, 238, 1);
@@ -103,7 +106,7 @@
       }
       .newInspection-div{
       display: flex;
-      gap: 20px;
+      gap: 50px;
       width: 100%;
       padding: 20px 0px;
       justify-content: center;

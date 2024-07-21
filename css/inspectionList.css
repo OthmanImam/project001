@@ -38,17 +38,17 @@
   max-width: 100%;
   width: 100%;
   display: flex;
-  gap: 30%;
+  justify-content: space-between;
   margin-bottom: 10px;
   align-items: center;
-  border: 1px solid;
+  flex-wrap: wrap;  
 }
 
 .filter-btn {
   border: none;
   color: #000;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding:2px 10px;
   margin-right: 10px;
   cursor: pointer;
   font-size: 1em;
@@ -59,12 +59,12 @@
   }
 }
 .status-btn{
-  width: 70%;
   display: flex;
   justify-content: space-between;
   background: #f1f1f1;
   padding: 0.2em;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .filter-btn.active {
@@ -72,18 +72,14 @@
   color: #2980b9;
 }
 .filters-options{
-  width: 100%;
   display: flex;
   gap: 1em;
-  justify-content: end;
 }
 .search-bar {
   border-radius: 5px;
-  width: 30%;
   border: 1px solid #bdc3c7;
 }
 .filter-dropdown {
-  width: 25%;
   display: flex;
   padding: 5px;
   border-radius: 5px;
@@ -147,55 +143,92 @@ button{
   border: 1px solid gainsboro;
   border-radius: 5px;
 }
-/* phone style */
-@media only screen and (max-width: 600px) {
-  .content {  
-    grid-area: content; 
-    width: 100%; 
-    padding: 5em 2em 1em 2em; 
-} 
-.filterss {
-  max-width: 100%;
-  width: 100%;
-  display: flex;
-  margin-bottom: 10px;
-  align-items: center;
-  border: none;
-}
-
-.filter-btn {
-  border: none;
-  color: #000;
-  border-radius: 5px;
-  padding: 5px 5px;
-  margin-right: 10px;
-  cursor: pointer;
-  font-size: 0.9em;
-  background: transparent;
-  &:hover{
-      background-color: #ffffff;
-      
+ 
+@media only screen and (max-width: 320px) {  
+  /* Styles for small smartphones */  
+  .intro{
+    font-size: 0.7em;
+    gap: 10px;
   }
-}
-.filters-options{
+  .intro .insp-btn{
+    font-size: 0.7em;
+  }
+ .content {  
+  padding: 6em 1em 1em 1em; 
+  }  
+ .filterss {  
+  flex-wrap: wrap; 
+  border: none; 
   width: 100%;
-  display: none;
-  padding: 2px 2px;
-  gap: 1em;
+  }  
+ .status-btn, .filter-bt { 
+  background: ghostwhite; 
+  font-size: 0.8em;  
+  padding: 3px 5px; 
+  width: 100%; 
+  }  
+ .filters-options { 
+  display: none;  
+  }  
+}  
   
-}
-
-}
-/* tablet style */
-@media only screen and (min-width: 601px) and (max-width: 1104px) {
-  .filterss {
-    max-width: 100%;
-    width: 100%;
-    display: flex;
-    /* justify-content: space-evenly; */
-    margin-bottom: 10px;
-    align-items: center;
-    border: 1px solid;
+@media only screen and (max-width: 480px) {  
+  /* Styles for medium smartphones */  
+ .content {  
+  padding: 4em 1.5em 1em 1.5em;  
+  }  
+ .filterss {  
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;  
+  }  
+ .filter-btn {  
+  font-size: 0.9em;  
+ padding: 4px 6px;  
+  }  
+ .filters-options {  
+ display: none;  
+  }  
+}  
+  
+/* Tablets */  
+@media only screen and (min-width: 601px) and (max-width: 768px) {  
+  /* Styles for small tablets */  
+ .content {  
+ padding: 3em 2em 1em 2em;  
+  }  
+ .filterss {  
+  justify-content: center;  
+  }  
+ .filter-btn {  
+  font-size: 1em;  
+  padding: 5px 8px;  
+  }  
+ .filters-options {  
+  display: flex;  
+  gap: 1em;  
+  }  
+  
+}  
+  
+@media only screen and (min-width: 769px) and (max-width: 1104px) {  
+  /* Styles for large tablets */  
+ .content {  
+  padding: 3em 2em 1em 3em;  
+  }  
+  .status-btn{
+    background: ghostwhite;
   }
-}
+ .filterss {  
+  font-size: 1em;
+  justify-content: center; 
+  }  
+ .filter-btn {  
+  font-size: 1em;  
+  padding: 4px 8px;  
+  }  
+ .filters-options { 
+  gap: 1em;  
+  }  
+}  
 

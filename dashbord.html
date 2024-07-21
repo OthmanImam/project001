@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Underwriter Dashboard</title>
     <link rel="stylesheet" href="/css/dashbord.css">
     <link rel="stylesheet" href="/css/nav_bar.css">
     <link
@@ -28,6 +28,7 @@
           />
 </head>
 <body>
+  <div class="menu-icon" id="menu-icon">&#9776;</div>
     <!-- header structure -->
          <header>
             <!-- nav structure -->
@@ -109,14 +110,15 @@
            <h4>TRM</h4><br> 
          <ul>  
            <li>
-             <a href="#" class="overview active"><i class="fa-sharp fa-light fa-chart-simple active"></i> <span class="active">Overview</span></a></li>  
+             <a href="#" id="" class="overview active"><i class="fa-sharp fa-light fa-chart-simple active"></i> <span class="active">Overview</span></a></li>  
            <li>
             
-             <a href="" id="request"> <i class="fa-light fa-table-list"></i>  Requests</a></li>  
+             <a href="#" id="request-bt"> <i class="fa-light fa-table-list"></i>  Requests</a></li>  
          </ul>
        </div>  
        </aside>
     <!-- aside icons-bar ends -->
+     
     <!-- main structure -->
     <main>
        <span class="intro">
@@ -125,16 +127,15 @@
            <p>Take a look at your dashboord and see all pending task.</p>
          </div>
          <button class="insp-btn" id="createBtn">
-           <i class="fa-sharp fa-regular fa-plus" style="color: #fff"></i
-           >&nbsp; &nbsp; Create New Inspection
+           <i class="fa-sharp fa-regular fa-plus" style="color: #fff"></i>Create New Inspection
          </button>
        </span>
       <div class="card-div"> 
        <div class="card all-request">
-         <p>Completed Request</p>
+         <p>All Request</p>
          <span class="span3">
            <img src="/img/cardPointer.png" alt="" class="cardpointer" />
-           <h1>114</h1>
+           <h1>32</h1>
          </span>
        </div>
        <div class="card">
@@ -145,17 +146,17 @@
          </span>
        </div>
        <div class="card">
-         <p>Completed Request</p>
+         <p>Ongoing Request</p>
          <span class="span3">
            <img src="/img/cardPointer.png" alt="" class="cardpointer" />
-           <h1>114</h1>
+           <h1>19</h1>
          </span>
        </div>
        <div class="card">
-         <p>Completed Request</p>
+         <p>Delayed Request</p>
          <span class="span3">
            <img src="/img/cardPointer.png" alt="" class="cardpointer" />
-           <h1>114</h1>
+           <h1>19</h1>
          </span>
        </div>
      </div>
@@ -164,7 +165,7 @@
             <table>
                 <tr class="activity-header">
                     <td >Activity</td>
-                    <td><a href="#" class="view-all">View all</a></td>
+                    <td><a href="#" class="view-all" style="color: #474c57;">View all</a></td>
                 </tr>
                 <tr>
                     <td>You have a property inspection coming up in three days</td>
@@ -184,7 +185,7 @@
      <!-- main table -->
    </main> 
    <div class="content">
-     <span class="span3"><p><a href="">Creat Inspections</p></a> <a href="" style="text-decoration: none; color: gainsboro;">View all ></a></span><br>
+     <span class="span3"><p>Creat Inspections</p> <a href="" style="text-decoration: none; color: #474c57;">View all ></a></span><br>
      <div class="">
        <div class="table-container">
          <table>
@@ -252,22 +253,6 @@
      </div>
      </div>
    </div>
-   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const createBtn = document.getElementById('createBtn');
-      const request = document.getElementById('request');
-  
-      createBtn.addEventListener('click', function() {
-        // Replace 'create.html' with the actual URL of your Create page
-        window.location.href = '/generateInspection.html';
-      });
-      createBtn.addEventListener('click', function() {
-        // Replace 'create.html' with the actual URL of your Create page
-        window.location.href = '/generateInspection.html';
-      });
-    });
-    
-  </script>
-  
+   <script src="/js/nav_bar.js"></script>
 </body>
 </html>
