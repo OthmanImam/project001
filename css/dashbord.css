@@ -239,7 +239,7 @@ tr td:last-child {
   .content {
     grid-area: content;
     padding: 1em 1.5em 3em 1.5em;
-    margin-top: 0px;
+    margin-top: 80px;
   }
   .activity-container {
     width: 100%;
@@ -254,12 +254,9 @@ tr td:last-child {
   }
   
 }
-/* Tablet styles */
-@media only screen and (min-width: 601px) and (max-width: 1104px) {
-    body{
-        display: block;
-    }
+@media only screen and (max-width: 1023px) {
   main {
+    padding: 0 1em 0 1em;
     padding-top: 5em;
     grid-template-areas:
       "hh"
@@ -271,19 +268,7 @@ tr td:last-child {
   }
   .content {
     grid-area: content;
-    margin-top: 10px;
+    padding: 1em 1.5em 3em 1.5em;
+    margin-top: 2px;
   }
-  .activity-container {
-    width: 100%;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid gainsboro;
-    padding: 1em;
-    margin-top: 1em;
-  }
-  .card-div {
-    margin-top: -1.5em;
-  }
-  
 }
-

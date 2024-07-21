@@ -81,3 +81,21 @@
     margin: 4px 4px;
     cursor: pointer;
 }
+@media screen and (max-width:600px)  {
+    .modal-img{
+        left: 26px;
+        top: 0;
+        width: 12cap;
+        height: auto;
+    }
+    .modal-content,.moda-content2 {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 15px;
+        border: 1px solid #888;
+        justify-content: center;
+        text-align: center;
+        width: 70%; 
+    } 
+    
+}

@@ -1,216 +1,121 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="image/New Leadway Logo 1.png" type="image/x-icon">
-    <title>Dashbord</title>
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
-    />
-   <link rel="stylesheet" href="/css/inspectionList.css">
-   <link rel="stylesheet" href="/css/nav_bar.css">
-   <script src="/js/inspectionList.js"></script>
+    <title>Inspection List</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css" />
+    <link rel="stylesheet" href="/css/inspectionList.css">
+    <link rel="stylesheet" href="/css/nav_bar.css">
+    <script src="/js/inspectionList.js"></script>
+
+    <style>
+        
+        /* .dashbord-menu {
+            display: none;
+        } */
+    </style>
 </head>
 <body>
-  <!-- <div class="dashboard">   -->
+    <div class="menu-icon" id="menu-icon">&#9776;</div>
     <header>
-      <!-- nav structure -->
-     <nav>
-       <ul>
-         <li>
-           <i class="fa-sharp fa-thin fa-bell" style="color: #000000"></i>
-         </li>
-         <li>
-           <span
-             style="
-               color: #fff;
-               padding: 10px;
-               border-radius: 50px;
-               background: #000;
-               font-size: 10px;
-               margin-right: 10px;
-             "
-             >UA</span
-           ><a href="#">Usman</a>
-         </li>
-         <li>
-           <a href=""><i class="fa-thin fa-caret-down"></i></a>
-         </li>
-       </ul>
-     </nav>
-     <!-- nav-header end -->
-   </header>
+        <nav>
+            <ul>
+                <li><i class="fa-sharp fa-thin fa-bell" style="color: #000000"></i></li>
+                <li><span style="color: #fff; padding: 10px; border-radius: 50px; background: #000; font-size: 10px; margin-right: 10px;">UA</span><a href="#">Usman</a></li>
+                <li><a href="#"><i class="fa-thin fa-caret-down"></i></a></li>
+            </ul>
+        </nav>
+    </header>
     <aside>
-        <div class="side-bar-nav">
-          <ul>
-            <li>
-              <a href="#"
-                ><i
-                  class="fa-light fa-objects-column"
-                  style="color: #ff7b00"
-                ></i
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                ><i
-                  class="fa-regular fa-calendar-lines"
-                  style="color: #ff5900"
-                ></i
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fa-regular fa-command" style="color: #ff5900"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fa-regular fa-briefcase" style="color: #ff5900"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                ><i
-                  class="fa-regular fa-chart-pie-simple"
-                  style="color: #fa4b00"
-                ></i
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                ><i
-                  class="fa-regular fa-gear-complex"
-                  style="color: #fa4b00"
-                ></i
-              ></a>
-            </li>
-          </ul>
-    </div>
-    <div class="dashbord-menu">
-        <img src="/img/logo2.png" alt="" class="menu-logo">
-        <h4>TRM</h4><br> 
-      <ul>  
-        <li>
-          <a href="#"><i class="fa-sharp fa-light fa-chart-simple"></i> Overview</a></li>  
-        <li>
-         
-          <a href="#"> <i class="fa-light fa-table-list"></i>  Requests</a></li>  
-      </ul>
-    </div>  
+        <div class="side-bar-nav" id="side-bar-nav">
+            <ul>
+                <li><a href="#" id="nav"><i class="fa-light fa-objects-column" style="color: #ff7b00"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-calendar-lines" style="color: #ff5900"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-command" style="color: #ff5900"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-briefcase" style="color: #ff5900"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-chart-pie-simple" style="color: #fa4b00"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-gear-complex" style="color: #fa4b00"></i></a></li>
+            </ul>
+        </div>
+        <div class="dashbord-menu" id="dash-menu">
+            <img src="/img/logo2.png" alt="" class="menu-logo">
+            <h4>TRM</h4><br>
+            <ul>
+                <li><a href="#" id="overview"><i class="fa-sharp fa-light fa-chart-simple"></i> Overview</a></li>
+                <li><a href="#" id="request"><i class="fa-light fa-table-list"></i> Requests</a></li>
+            </ul>
+        </div>
     </aside>
-    <!-- *********************** -->
-   <!-- <main> -->
     <div class="content">
-      <div class="content-header">
-        <div class="intro">
-          <div>
-            <h3>Inspection List</h3>
-            <p>See inspections across all business classes</p>
-      </div>
-        <button class="insp-btn">
-          <i class="fa-sharp fa-regular fa-plus" style="color: #fff"></i
-            > 
-          Create New Inspection</button>
-          </div>  
-        <div class="filterss">
-              <div class="status-btn">
-              <button class="filter-btn active">All Requests</button>
-              <button class="filter-btn">Ongoing</button>
-              <button class="filter-btn">Completed</button>
+        <div class="content-header">
+            <div class="intro">
+                <div>
+                    <h3>Inspection List</h3>
+                    <p>See inspections across all business classes</p>
+                </div>
+                <button class="insp-btn" id="createBtn">
+                  <i class="fa-sharp fa-regular fa-plus" style="color: #fff"></i>Create New Inspection
+                </button>            
+              </div>
+            <div class="filterss">
+                <div class="status-btn">
+                    <button class="filter-btn active">All Requests</button>
+                    <button class="filter-btn">Ongoing</button>
+                    <button class="filter-btn">Completed</button>
+                </div>
+                <div class="filters-options">
+                    <input type="text" placeholder="Search" class="search-bar">
+                    <button><span class="dot marine"></span> Marine <i class="fa-sharp fa-light fa-xmark" style="color: #000;"></i></button>
+                    <div class="filter-dropdown">
+                        <span style="font-size: 12px;color: gray;"> Sorted by:</span>
+                        <select class="">
+                            <option value="Marine">Marine</option>
+                            <option value="Class">Class</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div class="filters-options">
-              <input type="text" placeholder="Search" class="search-bar">
-              <button><span class="dot marine"></span> Marine <i class="fa-sharp fa-light fa-xmark" style="color: #000;"></i></button>
-              <div class="filter-dropdown" >
-              <span style="font-size: 12px;color: gray;"> Sorted by:</span>
-              <select class="">
-                  <option value="Marine">Marine</option>
-                  <option value="Class">Class</option>
-              </select>
-            </div>
-            </div>
-          </div>
-      </div>
-      <div class="table-container">
-      <table class="inspection-table table-container">
-          <thead>
-              <tr>
-                  <th>ID</th>
-                  <th>Date</th>
-                  <th>Name</th>
-                  <th>Inspection Method</th>
-                  <th>Officer</th>
-                  <th>Status</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>10321</td>
-                  <td>15/06/2023</td>
-                  <td>Rovenheights properties</td>
-                  <td>Digital</td>
-                  <td>Mustapha Onasanya</td>
-                  <td><span class="status ongoing">Ongoing</span></td>
-              </tr>
-              <tr>
-                  <td>10321</td>
-                  <td>12/06/2023</td>
-                  <td>Shoprite Stores</td>
-                  <td>Manual</td>
-                  <td>Mustapha Onasanya</td>
-                  <td><span class="status completed">Completed</span></td>
-              </tr>
-          </tbody>
-      </table>
-    </div>  
-
+        </div>
+        <div class="table-container">
+            <table class="inspection-table table-container">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Inspection Method</th>
+                        <th>Officer</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10321</td>
+                        <td>15/06/2023</td>
+                        <td>Rovenheights properties</td>
+                        <td>Digital</td>
+                        <td>Mustapha Onasanya</td>
+                        <td><span class="status ongoing">Ongoing</span></td>
+                    </tr>
+                    <tr>
+                        <td>10321</td>
+                        <td>12/06/2023</td>
+                        <td>Shoprite Stores</td>
+                        <td>Manual</td>
+                        <td>Mustapha Onasanya</td>
+                        <td><span class="status completed">Completed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/js/nav_bar.js"></script>    
 </body>
 </html>
- <!-- <main> 
-        <div>
-        <h4>Inspection List</h4>  
-        <p>See inspection accross all business classes</p>
-        </div>
-        <button class="insp-btn" On click()
-        ><i class="fa-sharp fa-regular fa-plus" style="color: #fff;"></i>&nbsp; &nbsp; Create New Inspection</button>
-    </main>  
-    <div class="content">
-     <div class="top-status-bar">
-      <div class="task-status">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-      </div>
-      <div class="search-sort">
-        <input type="search" name="" id="">
-        <span class="classes"></span>
-        <div><select name="" id=""></select></div>
-        </div>
-      </div>
-      <h2>Content Area</h2>  
-      <p>This is the content area.</p> 
-      <div class="tablu">
-        
-      </div> 
-    </div>  
-  </div>  
-   -->

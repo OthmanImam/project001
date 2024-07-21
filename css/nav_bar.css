@@ -121,5 +121,12 @@ aside {
   aside{
     display: none;
   }
-  
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+  position: fixed;
+  color: orangered;
+}
 }
