@@ -58,8 +58,8 @@
 }
     .newInspection-div{
       display: flex;
-      gap: 10px;
-      width: 50%;
+      gap: 1em;
+      width: 60%;
       padding: 20px;
       justify-content: center;
       margin: auto;
