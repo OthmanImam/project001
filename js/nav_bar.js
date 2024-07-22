@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
       window.location.href = '/inspectionList.html';
     });
     overview.addEventListener('click', function() {
-      window.location.href = '/dashbord.html';
+      window.location.href = '/dashboard.html';
     });
    
   });

@@ -99,7 +99,7 @@ aside {
       font-size:20px;
       text-align:center; 
     }  
-    .dashbord-menu ul li a{
+    .dashboard-menu ul li a{
       color: black;
       padding-inline-start: 0;
       &:hover{
