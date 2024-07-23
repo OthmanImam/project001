@@ -1,5 +1,4 @@
-
-  document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function(){
     const createCard1 = document.getElementById("card1")
     const createCard2 = document.getElementById("card2")
     let generatebutton = document.getElementById("gererate-btn");

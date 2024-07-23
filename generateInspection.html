@@ -27,9 +27,9 @@
     />
    <link rel="stylesheet" href="/css/generateInspection.css">
    <link rel="stylesheet" href="/css/nav_bar.css">
-   <!-- <script src="/js/dashboard3.js"></script> -->
 </head>
 <body>
+  <div class="menu-icon" id="menu-icon">&#9776;</div>
   <header>
     <!-- nav structure -->
    <nav>
@@ -48,10 +48,8 @@
              margin-right: 10px;
            "
            >UA</span
-         ><a href="#">Usman</a>
-       </li>
-       <li>
-         <a href=""><i class="fa-thin fa-caret-down"></i></a>
+           ><a href="#">Usman</a>
+           <a href=""><i class="fa-thin fa-caret-down"></i></a>
        </li>
      </ul>
    </nav>
@@ -158,67 +156,7 @@
       </div>
     </div>
 </body>
-<script>
-  document.addEventListener("DOMContentLoaded", function(){
-    const createCard1 = document.getElementById("card1")
-    const createCard2 = document.getElementById("card2")
-    let generatebutton = document.getElementById("gererate-btn");
-    let selectedCard = "";
-
-    createCard1.addEventListener("click", function(){
-      addBorder(createCard1,"highlight")
-      generatebutton.classList.add('orange')
-      selectedCard = "preloss"
-    })
-    
-    createCard2.addEventListener("click", function(){
-      addBorder(createCard2,"highlight")
-      generatebutton.classList.add('orange')
-      selectedCard = "postloss"
-  })
-  generatebutton.addEventListener("click", function(){
-    if (selectedCard === "preloss"){
-      location.href = "pre_loss_inspection.html"
-    }else if (selectedCard === "postloss"){
-      location.href = "post_loss_inspection.html"
-    }
-  })
-  function addBorder(element, className){
-    const allCards = document.querySelectorAll(".tab1,.tab2")
-    for (const card of allCards) {
-      card.classList.remove('highlight');
-    }
-    element.classList.add(className)
-  }
-})
-</script>
+<script src="/js/generate.js"></script>
+<script src="/js/nav_bar.js"></script>
 </html>
- <!-- <main> 
-        <div>
-        <h4>Inspection List</h4>  
-        <p>See inspection accross all business classes</p>
-        </div>
-        <button class="insp-btn" On click()
-        ><i class="fa-sharp fa-regular fa-plus" style="color: #fff;"></i>&nbsp; &nbsp; Create New Inspection</button>
-    </main>  
-    <div class="content">
-     <div class="top-status-bar">
-      <div class="task-status">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-      </div>
-      <div class="search-sort">
-        <input type="search" name="" id="">
-        <span class="classes"></span>
-        <div><select name="" id=""></select></div>
-        </div>
-      </div>
-      <h2>Content Area</h2>  
-      <p>This is the content area.</p> 
-      <div class="tablu">
-        
-      </div> 
-    </div>  
-  </div>  
-   -->
+ 

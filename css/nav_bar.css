@@ -17,7 +17,8 @@ body {
   @media screen and (25px <= width <=750px) {
     width: 100%;
     padding: 0;
-    margin: auto;
+    height: 100vh;
+    margin: 0 auto;
     overflow-x: none;
   }
 }
@@ -128,5 +129,8 @@ aside {
   z-index: 1000;
   position: fixed;
   color: orangered;
+}
+.dashboard-menu{
+  display: none;
 }
 }

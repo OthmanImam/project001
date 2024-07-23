@@ -21,28 +21,31 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener('DOMContentLoaded', function() {
     const menuIcon = document.getElementById('menu-icon');
     const aside = document.querySelector('aside');
-    const navItem = document.getElementById('nav');
+    const navItem = document.getElementById('dashboard-menu');
     const dashMenu = document.getElementById('dash-menu');
 
     menuIcon.addEventListener('click', function() {
         if (aside.style.display === 'block') {
             aside.style.display = 'none';
+            // navItem.style.display = 'block';
+            
         } else {
             aside.style.display = 'block';
+            navItem.style.display = 'block';
         }
     });
 
-    navItem.addEventListener('click', function() {
-        if (dashMenu.style.display === 'block') {
-            dashMenu.style.display = 'none';
-        } else {
-            dashMenu.style.display = 'block';
-        }
-    });
+    // navItem.addEventListener('click', function() {
+    //     if (dashMenu.style.display === 'block') {
+    //         dashMenu.style.display = 'none';
+    //     } else {
+    //         dashMenu.style.display = 'block';
+    //     }
+    // });
 
-    document.addEventListener('click', function(event) {
-        if (!navItem.contains(event.target) && !dashMenu.contains(event.target)) {
-            dashMenu.style.display = 'none';
-        }
-    });
+    // document.addEventListener('click', function(event) {
+    //     if (!navItem.contains(event.target) && !dashMenu.contains(event.target)) {
+    //         dashMenu.style.display = 'none';
+    //     }
+    // });
 });
