@@ -6,6 +6,13 @@
   grid-area: content; 
   width: 100%; 
   padding: 3em 0em 1em 0em; 
+  @media screen and (max-width:1023px) {
+    padding-left: 1em;
+    
+  }
+  @media screen and (max-width:600px) {
+    padding-left: 0px;
+  }
 } 
 .content-header p {
   color: #7f8c8d;
