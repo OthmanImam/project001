@@ -21,8 +21,8 @@ main {
 }
 .insp-btn {
   position: relative;
-  height: 70%;
-  padding: 10px;
+  height: 40%;
+  padding: px;
   background: rgba(255, 122, 0, 1);
   border: none;
   color: #fff;
@@ -30,6 +30,12 @@ main {
   /* Animate: Instant; */
   animation-duration: 0ms;
   cursor: pointer;
+  @media screen and (max-width:600px) {
+    font-size: 1cap;
+    max-width: 50%;
+    width: 40%;
+    padding: 5px;
+  }
 }
 .card-div {
   grid-area: bd;
@@ -225,8 +231,9 @@ tr td:last-child {
     body{
         display: block;
     }
+  
   main {
-    padding: 0 1em 0 1em;
+    padding: 5em 1em 0 1em !important;
     padding-top: 5em;
     grid-template-areas:
       "hh"
@@ -238,7 +245,7 @@ tr td:last-child {
   }
   .content {
     grid-area: content;
-    padding: 1em 1.5em 3em 1.5em;
+    padding: 1em 1.5em 3em 1.5em !important;
     margin-top: 80px;
   }
   .activity-container {
@@ -252,11 +259,14 @@ tr td:last-child {
   .card-div {
     margin-top: -1.5em;
   }
+  .span3{
+    margin-top: 5cap;
+  }
   
 }
 @media only screen and (max-width: 1023px) {
   main {
-    padding: 0 1em 0 1em;
+    padding: 0 1em 0 3em;
     padding-top: 5em;
     grid-template-areas:
       "hh"
@@ -268,7 +278,8 @@ tr td:last-child {
   }
   .content {
     grid-area: content;
-    padding: 1em 1.5em 3em 1.5em;
+    padding: 1em 1em 3em 3em;
     margin-top: 2px;
   }
+
 }

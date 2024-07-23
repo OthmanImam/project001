@@ -4,7 +4,7 @@
     .content {  
     grid-area: content; 
     width: 100%; 
-    padding: 5em 2em 1em 1em; 
+    padding: 1em 2em 1em 1em; 
 } 
   
  /* ***************************** */
@@ -12,7 +12,7 @@
   .intro{
       display: flex;
       justify-content: space-between;
-      padding: 0 30px;
+      padding: 0 1em 0 2em;
       .insp-btn{
           position: relative;
           height: 3em;
@@ -48,7 +48,7 @@
     cursor: pointer;
   }
   .generate.orange{
-    background: orangered;
+    background: rgb(255, 102, 1);
   }
 
 /* content style */
@@ -58,9 +58,10 @@
 }
     .newInspection-div{
       display: flex;
-      gap: 1em;
-      width: 60%;
-      padding: 20px;
+      gap: 1cap;
+      width: 50%;
+      padding: 2em;
+
       justify-content: center;
       margin: auto;
     }
@@ -69,27 +70,26 @@
       padding: 40px 0;
       border-radius: 10px;
       text-align: center;
-      margin: auto;
+      margin: 0 auto;
       cursor: pointer;
-      
-    }
-    .highlight{
-      border: 1px solid orangered;
       
     }
     .classes-img{
       width: auto;
-      height: 86px;
       border: 1px solid rgba(127, 139, 148, 1);
       border-radius: 50px;
       padding: 10px;
       margin:0 auto;
     }
+    .highlight{
+      border: 1px solid orangered;
+      
+    }
     .dropdown-class{
       display: flex;
       flex-direction: column;
-      width: 50%;
-      padding: 20px;
+      width: 45%;
+      padding: 2em;
       justify-content: center;
       margin: auto;
     }
@@ -100,33 +100,82 @@
       border: 1px solid rgba(238, 238, 238, 1);
       outline: none;
     }
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:1023px) {
+      .content {  
+        width: 100%; 
+        padding: 1em 2em 1em 4em; 
+    } 
       .intro{
-        margin-top: 2em;
+        position: relative;
+        margin-top: 1em;
+        padding-right: -5em;
+        left: -1em;
+        margin-bottom: -20px;
       }
       .newInspection-div{
       display: flex;
-      gap: 50px;
-      width: 100%;
+      gap: 2cap;
+      width: 70%;
+      padding: 0 20px;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .newInspection{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 35%;
+    }
+    .classes-img{
+      width: 80%;
+      border: 1px solid rgba(127, 139, 148, 1);
+      border-radius: 50px;
+      padding: 1.5cap;
+      margin:1cap 20em;
+      text-align: center;
+    }
+    .classes-img p{
+      margin: 0 25em;
+    }
+    .dropdown-class{
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      padding: 20px;
+      justify-content: center;
+      margin: auto;
+    }
+    }
+    @media screen and (max-width:600px) {
+      .content {  
+        width: 100%; 
+        padding: 1em 2em 1em 2em; 
+    } 
+      .intro{
+        margin-top: 4em;
+        font-size: 1.2cap;
+        padding: 0;
+      }
+      .newInspection-div{
+      display: flex;
+      gap: 1cap;
+      width: 70%;
       padding: 20px 0px;
       justify-content: center;
       margin: 0 auto;
     }
     .newInspection{
-      width: 100%;
-      padding: 40px;
-      /* border: 1px solid rgba(238, 238, 238, 1); */
+      width: 65%;
+      padding: 1cap;
       border-radius: 10px;
       text-align: center;
       margin: auto;
-      /* &:hover{
-        border-color: #fa4b00;
-      } */
     }
     .dropdown-class{
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 85%;
       padding: 20px;
       justify-content: center;
       margin: auto;

@@ -17,7 +17,7 @@
 
     <style>
         
-        /* .dashbord-menu {
+        /* .dashboard-menu {
             display: none;
         } */
     </style>
@@ -36,7 +36,7 @@
     <aside>
         <div class="side-bar-nav" id="side-bar-nav">
             <ul>
-                <li><a href="#" id="nav"><i class="fa-light fa-objects-column" style="color: #ff7b00"></i></a></li>
+                <li><a href="/dashboard.html" id="nav"><i class="fa-light fa-objects-column" style="color: #ff7b00"></i></a></li>
                 <li><a href="#"><i class="fa-regular fa-calendar-lines" style="color: #ff5900"></i></a></li>
                 <li><a href="#"><i class="fa-regular fa-command" style="color: #ff5900"></i></a></li>
                 <li><a href="#"><i class="fa-regular fa-briefcase" style="color: #ff5900"></i></a></li>
@@ -44,12 +44,12 @@
                 <li><a href="#"><i class="fa-regular fa-gear-complex" style="color: #fa4b00"></i></a></li>
             </ul>
         </div>
-        <div class="dashbord-menu" id="dash-menu">
+        <div class="dashboard-menu" id="dash-menu">
             <img src="/img/logo2.png" alt="" class="menu-logo">
             <h4>TRM</h4><br>
             <ul>
-                <li><a href="#" id="overview"><i class="fa-sharp fa-light fa-chart-simple"></i> Overview</a></li>
-                <li><a href="#" id="request"><i class="fa-light fa-table-list"></i> Requests</a></li>
+                <li ><a href="/dashboard.html" id="overview"><i class="fa-sharp fa-light fa-chart-simple"></i> Overview</a></li>
+                <li><a href="/inspectionList.html" id="request-bt"><i class="fa-light fa-table-list"></i> Requests</a></li>
             </ul>
         </div>
     </aside>
@@ -74,7 +74,7 @@
                     <input type="text" placeholder="Search" class="search-bar">
                     <button><span class="dot marine"></span> Marine <i class="fa-sharp fa-light fa-xmark" style="color: #000;"></i></button>
                     <div class="filter-dropdown">
-                        <span style="font-size: 12px;color: gray;"> Sorted by:</span>
+                        <span style="font-size: 11px;color: gray;"> Sorted by:</span>
                         <select class="">
                             <option value="Marine">Marine</option>
                             <option value="Class">Class</option>
@@ -102,7 +102,7 @@
                         <td>Rovenheights properties</td>
                         <td>Digital</td>
                         <td>Mustapha Onasanya</td>
-                        <td><span class="status ongoing">Ongoing</span></td>
+                        <td><a href="/request_details.html" style="text-decoration: none;"><span class="status ongoing">Ongoing</span></a></td>
                     </tr>
                     <tr>
                         <td>10321</td>
