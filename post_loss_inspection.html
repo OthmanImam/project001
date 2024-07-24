@@ -27,12 +27,10 @@
     />
    <link rel="stylesheet" href="/css/create_inspection.css">
    <link rel="stylesheet" href="/css/nav_bar.css">
-   <!-- <link rel="stylesheet" href="/css/modal.css"> -->
-    <style>
-        
-    </style>
+   <link rel="stylesheet" href="/css/modal.css">
 </head>
 <body>
+  <div class="menu-icon" id="menu-icon">&#9776;</div>
   <header>
     <!-- nav structure -->
    <nav>
@@ -52,8 +50,6 @@
            "
            >UA</span
          ><a href="#">Usman</a>
-       </li>
-       <li>
          <a href=""><i class="fa-thin fa-caret-down"></i></a>
        </li>
      </ul>
@@ -107,15 +103,15 @@
             </li>
           </ul>
     </div>
-    <div class="dashbord-menu">
-        <img src="image/logo2.png" alt="" class="menu-logo">
+    <div class="dashboard-menu">
+        <img src="/img/logo2.png" alt="" class="menu-logo">
         <h4>TRM</h4><br> 
       <ul>  
         <li>
-          <a href="#"><i class="fa-sharp fa-light fa-chart-simple"></i> Overview</a></li>  
+          <a href="/dashboard.html"><i class="fa-sharp fa-light fa-chart-simple"></i> Overview</a></li>  
         <li>
          
-          <a href="#"> <i class="fa-light fa-table-list"></i>  Requests</a></li>  
+          <a href="/inspectionList.html" id="request-bt"> <i class="fa-light fa-table-list"></i>  Requests</a></li>  
       </ul>
     </div>  
     </aside>
@@ -128,7 +124,7 @@
         <h3>Create New Inspection</h3>
         <p>See inspections across all business classes</p>
       </div>
-        <a href="Inspection_list.html"><i class="fa-light fa-chevron-left" style="color: #494f5b;"></i> back to create request</a>
+        <a href="/generateInspection.html"><i class="fa-light fa-chevron-left" style="color: #494f5b;"></i> back to create request</a>
         </span>  
        </div>
        <!-- form opening -->
@@ -261,13 +257,14 @@
     <img src="/img/modal-img.png" alt="" class="modal-img"><br>
     You’ve successfully created new <br>Inspection ID-23321 for PRIME GARDENS 
     <div class="modal-footer2">
-      <button class="button2 button-cancel2">Go to request list</button>
-      <button class="button2 button-submit2">Create new inspection</button>
+      <button class="button2 button-cancel2" id="button-cancel2">Go to request list</button>
+      <button class="button2 button-submit2" id="button-submit2">Create new inspection</button>
     </div>
   </div>
 </div>
 
 <script src="/js/modal.js"></script>
+<script src="/js/nav_bar.js"></script>
 </body>
 </html>
  

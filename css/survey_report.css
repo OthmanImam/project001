@@ -160,7 +160,7 @@ border-bottom: 2px solid orange;
 
 .container2 .tab-content {
 display: none;
-padding: 0 30px 30px 30px;
+padding: 0 30p 30px 30px;
 margin: 20px;
 border-radius: 10px;
 background: rgb(251,251,251,1);
@@ -172,7 +172,7 @@ display: block;
 
 .container2 .info {
 display: flex;
-gap: 5px;
+gap: 30px;
 flex-wrap: wrap;
 }
 
@@ -207,6 +207,18 @@ font-size: 16px;
 margin-right: 20px;
 /* background: #000000; */
 }  
+.container2 .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  /* flex-wrap: wrap; */
+  }
+  
+  .container2 .info-item {
+  width: 100%;
+  margin-top: 20px;
+  }
 .container{
   display: flex;
   flex-direction: column;
@@ -217,8 +229,9 @@ margin: 2px 15px 5px -15px;
 .policy-progress {
   text-align: center;
   position: relative;
-  width: 80%;
+  width: 70%;
   margin-left: 0px;
+  border-left: none;
   }
   
   #progress-container {
@@ -231,7 +244,7 @@ margin: 2px 15px 5px -15px;
   .content {  
     grid-area: content; 
     width: 100%; 
-    padding: 4em 1em 1em 3em; 
+    padding: 4em 1em 1em 4em; 
   } 
   
   

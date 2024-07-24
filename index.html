@@ -16,7 +16,7 @@
             </div>
             <form id="loginForm">
                 <div class="login-form-intro">
-                    <h2>Adjuster Dashboard</h2>
+                    <h2>Underwriter Dashboard</h2>
                     <p>Welcome. Login to your portal account</p>
                 </div>
                 <div class="input-field">
@@ -51,6 +51,7 @@
                             class="password-inpt"
                             placeholder="Enter your password"
                             required
+                            min="10"
                         />
                         <i class="fas fa-lock"></i>
                     </span>
@@ -66,12 +67,15 @@
             </form>
         </div>
         <div class="image-side">
-            <small class="he">Help</small>
-            <div class="customer-note">
+            <small class="he"><i class="fa-regular fa-circle-question" style="color: #f5f7f9;"></i> Help</small>
+            <div class="customer-note-div">
                 <div class="note-logo-div">
                     <img src="/img/logo3.png" alt="" class="note-logo">
                 </div>
+                <span class="customer-note">
+                    <h5>Customer Management</h5>
                 <p>Manage customers from individual to corporate or group customers.</p>
+            </span>
             </div>
         </div>
     </div>
@@ -100,7 +104,7 @@
                 // Here, you can add your login validation logic
                 if (username && password) {
                     // Redirect to dashboard page
-                    window.location.href = '/dashbord.html'; // Ensure 'dashboard.html' is correct
+                    window.location.href = '/dashboard.html'; // Ensure 'dashboard.html' is correct
                 } else {
                     alert('Please enter a valid username and password.');
                 }

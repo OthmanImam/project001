@@ -81,3 +81,30 @@
     margin: 4px 4px;
     cursor: pointer;
 }
+@media screen and (max-width:600px)  {
+    .modal, .moda {
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    }
+    .modal-img{
+        left: 26px;
+        top: 0;
+        width: 12cap;
+        height: auto;
+    }
+    .modal-content,.moda-content2 {
+        background-color: #fefefe;
+        /* position: sticky; */
+        margin: 50% auto; /* 15% from the top and centered */
+        padding: 1.5cap;
+        border: 1px solid #888;
+        justify-content: center;
+        text-align: center;
+        width: 60%; 
+    } 
+    
+}

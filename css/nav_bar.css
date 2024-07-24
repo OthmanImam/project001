@@ -17,7 +17,8 @@ body {
   @media screen and (25px <= width <=750px) {
     width: 100%;
     padding: 0;
-    margin: auto;
+    height: 100vh;
+    margin: 0 auto;
     overflow-x: none;
   }
 }
@@ -99,7 +100,7 @@ aside {
       font-size:20px;
       text-align:center; 
     }  
-    .dashbord-menu ul li a{
+    .dashboard-menu ul li a{
       color: black;
       padding-inline-start: 0;
       &:hover{
@@ -121,5 +122,15 @@ aside {
   aside{
     display: none;
   }
-  
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+  position: fixed;
+  color: orangered;
+}
+.dashboard-menu{
+  display: none;
+}
 }

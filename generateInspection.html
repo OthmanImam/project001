@@ -27,9 +27,9 @@
     />
    <link rel="stylesheet" href="/css/generateInspection.css">
    <link rel="stylesheet" href="/css/nav_bar.css">
-   <!-- <script src="/js/dashbord3.js"></script> -->
 </head>
 <body>
+  <div class="menu-icon" id="menu-icon">&#9776;</div>
   <header>
     <!-- nav structure -->
    <nav>
@@ -48,10 +48,8 @@
              margin-right: 10px;
            "
            >UA</span
-         ><a href="#">Usman</a>
-       </li>
-       <li>
-         <a href=""><i class="fa-thin fa-caret-down"></i></a>
+           ><a href="#">Usman</a>
+           <a href=""><i class="fa-thin fa-caret-down"></i></a>
        </li>
      </ul>
    </nav>
@@ -61,7 +59,7 @@
         <div class="side-bar-nav">
           <ul>
             <li>
-              <a href="#"
+              <a href="/dashboard.html"
                 ><i
                   class="fa-light fa-objects-column"
                   style="color: #ff7b00"
@@ -104,15 +102,15 @@
             </li>
           </ul>
     </div>
-    <div class="dashbord-menu">
+    <div class="dashboard-menu">
         <img src="/img/logo2.png" alt="" class="menu-logo">
         <h4>TRM</h4><br> 
       <ul>  
         <li>
-          <a href="#"><i class="fa-sharp fa-light fa-chart-simple"></i> Overview</a></li>  
+          <a href="/dashboard.html"><i class="fa-sharp fa-light fa-chart-simple"></i> Overview</a></li>  
         <li>
          
-          <a href="#"> <i class="fa-light fa-table-list"></i>  Requests</a></li>  
+          <a href="/inspectionList.html" id="request-bt"> <i class="fa-light fa-table-list"></i>  Requests</a></li>  
       </ul>
     </div>  
     </aside>
@@ -125,10 +123,9 @@
         <h3>Create New Inspection</h3>
         <p>See inspections across all business classes</p>
       </div>
-        <button class="insp-btn" style="background: transparent;">
-          <i class="fa-sharp fa-regular fa-x" style="color: #fff"></i
-            >
-          </button>
+        <button class="insp-btn"  style="background: transparent;">
+        </button>
+        <a href="/dashboard.html" style="color: gray;"><i class="fa-sharp fa-regular fa-x"></i></a>
         </span>  
       </div>
        <div class="newInspection-div">
@@ -148,7 +145,7 @@
       <div class="dropdown-class btn">
         <label for="">Choose a class</label><br>
         <select name="" id="" class="dropdown-ops">
-          <option>&#128992 Motor</option>
+          <option><span>&#128992</span> Motor</option>
           <option>&#128309 Property</option>
           <option>&#128993 Marine</option>
           <option>&#128994 Agric</option>
@@ -159,67 +156,7 @@
       </div>
     </div>
 </body>
-<script>
-  document.addEventListener("DOMContentLoaded", function(){
-    const createCard1 = document.getElementById("card1")
-    const createCard2 = document.getElementById("card2")
-    let generatebutton = document.getElementById("gererate-btn");
-    let selectedCard = "";
-
-    createCard1.addEventListener("click", function(){
-      addBorder(createCard1,"highlight")
-      generatebutton.classList.add('orange')
-      selectedCard = "preloss"
-    })
-    
-    createCard2.addEventListener("click", function(){
-      addBorder(createCard2,"highlight")
-      generatebutton.classList.add('orange')
-      selectedCard = "postloss"
-  })
-  generatebutton.addEventListener("click", function(){
-    if (selectedCard === "preloss"){
-      location.href = "pre_loss_inspection.html"
-    }else if (selectedCard === "postloss"){
-      location.href = "post_loss_inspection.html"
-    }
-  })
-  function addBorder(element, className){
-    const allCards = document.querySelectorAll(".tab1,.tab2")
-    for (const card of allCards) {
-      card.classList.remove('highlight');
-    }
-    element.classList.add(className)
-  }
-})
-</script>
+<script src="/js/generate.js"></script>
+<script src="/js/nav_bar.js"></script>
 </html>
- <!-- <main> 
-        <div>
-        <h4>Inspection List</h4>  
-        <p>See inspection accross all business classes</p>
-        </div>
-        <button class="insp-btn" On click()
-        ><i class="fa-sharp fa-regular fa-plus" style="color: #fff;"></i>&nbsp; &nbsp; Create New Inspection</button>
-    </main>  
-    <div class="content">
-     <div class="top-status-bar">
-      <div class="task-status">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-      </div>
-      <div class="search-sort">
-        <input type="search" name="" id="">
-        <span class="classes"></span>
-        <div><select name="" id=""></select></div>
-        </div>
-      </div>
-      <h2>Content Area</h2>  
-      <p>This is the content area.</p> 
-      <div class="tablu">
-        
-      </div> 
-    </div>  
-  </div>  
-   -->
+ 
