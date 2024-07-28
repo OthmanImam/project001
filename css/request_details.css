@@ -47,15 +47,15 @@
   border: 1px solid gainsboro;
   border-left: 15px solid orange;
   width: 90%;
-  border-radius: 5px;
-  height: 100px;
-  margin-bottom: 40px;
+  border-radius: .3125rem;
+  height: 6.25rem;
+  margin-bottom: 2.5rem;
 }
 .view{
-  margin-left: 50px;
+  margin-left: 3.125rem;
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   justify-content: space-between;
   a{
     text-decoration: none;
@@ -66,7 +66,7 @@
 .re-assign{
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   justify-content: space-between;
   border-left: 15px solid rgb(97, 96, 96);
  a{
@@ -207,15 +207,15 @@ margin-inline-start: -15px;
     width: 100%;
     border-radius: 5px;
     height: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
   .view{
-    margin-left: 30px;
+    margin-left: 1.875rem;
     display: block;
-    width: 15em;
+    width: 20em;
     font-size: clam(0.8em, 2vw, 0.6em);
     align-items: center;
-    padding: 15px 5px;
+    padding: .0625rem .3125rem;
     /* justify-content: space-between; */
     a{
       font-size: 14px;

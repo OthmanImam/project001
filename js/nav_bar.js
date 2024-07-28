@@ -20,18 +20,17 @@ document.addEventListener("DOMContentLoaded", function() {
 // menu-icon script
 document.addEventListener('DOMContentLoaded', function() {
     const menuIcon = document.getElementById('menu-icon');
-    const aside = document.querySelector('aside');
-    const navItem = document.getElementById('dashboard-menu');
-    const dashMenu = document.getElementById('dash-menu');
+    const side = document.getElementById('side');
+    // const navItem = document.getElementById('dashboard-menu');
+    // const dashMenu = document.getElementById('dash-menu');
 
     menuIcon.addEventListener('click', function() {
-        if (aside.style.display === 'block') {
-            aside.style.display = 'none';
-            // navItem.style.display = 'block';
-            
+        if (side.style.display === 'block') {
+            side.style.display = 'none';
+            // navItem.style.display = 'block';  
         } else {
-            aside.style.display = 'block';
-            navItem.style.display = 'block';
+            side.style.display = 'block';
+            // navItem.style.display = 'block';
         }
     });
 

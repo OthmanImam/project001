@@ -51,9 +51,10 @@ header nav a {
   color: #000;
   text-decoration: none;
 }
-
+.side{
+  grid-area: aside;  
+}
 aside {  
-    grid-area: aside;  
     background-color: #fff; 
     position: fixed;
     z-index: 12; 
@@ -119,8 +120,8 @@ aside {
   body{
     display: block;
   }
-  aside{
-    display: none;
+  .side{
+    display:none;
   }
 .menu-icon {
   font-size: 30px;
@@ -129,8 +130,5 @@ aside {
   z-index: 1000;
   position: fixed;
   color: orangered;
-}
-.dashboard-menu{
-  display: none;
 }
 }
