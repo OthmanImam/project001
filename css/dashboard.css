@@ -3,7 +3,7 @@
 main {
   grid-area: main;
   width: 100%;
-  padding: 2em 3em 0em 5em;
+  padding: 2.5em 2em 0em 4.5em;
   display: grid;
   grid-template-areas:
     "hh hh"
@@ -227,7 +227,7 @@ tr td:last-child {
   margin-top: 50px;
 }
 /* phone style */
-@media only screen and (max-width: 600px) {
+@media screen and (25px <= width <=750px){
     body{
         display: block;
     }
@@ -235,13 +235,14 @@ tr td:last-child {
   main {
     padding: 5em 1em 0 1em !important;
     padding-top: 5em;
+    margin-bottom: 2em;
     grid-template-areas:
       "hh"
       "bd"
       "bt";
     grid-template-columns: 1fr;
     grid-template-rows: 15% 40% 20%;
-    gap: 20px;
+    gap: 1.25rem;
   }
   .content {
     grid-area: content;
@@ -266,7 +267,7 @@ tr td:last-child {
 }
 @media only screen and (max-width: 1023px) {
   main {
-    padding: 0 1em 0 3em;
+    padding: 2em 1em 0 3em;
     padding-top: 5em;
     grid-template-areas:
       "hh"
