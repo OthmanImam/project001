@@ -10,7 +10,7 @@
         height: 100vh;
         overflow-x: hidden;
         width: 100%;
-        padding: 0px;
+        padding: 0em;
         margin: 0 auto;
         background-color: #fff;
         /* @media screen and (25px <= width <=750px) {
@@ -31,9 +31,9 @@
         padding: 5em;
         padding-top: 4em;
         @media screen and (max-width:1023px) {
-          padding: 1em;
+          /* padding: 2em;
           margin: auto;
-          padding-top: 4em;
+          padding-top: 4em; */
         }
         @media screen and (max-width:992px) {
           height: 100vh;
@@ -57,12 +57,13 @@
       }
       .input-field {
         width: 100%;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-bottom: 5em;
+        margin-top: 1.5em;
         border: 1px solid #fff;
         border-radius: 5px;
-        padding: 5px 10px;
+        padding: 1em 1em;
         background: #fff;
+        font-size: 0.2em;
         box-shadow: 0px 20px 70px 0px rgba(0, 0, 0, 0.06);
         &:hover {
           border: 1px solid orange;
@@ -76,7 +77,7 @@
       }
       h3,
       h4 {
-        font-size: 12px;
+        font-size: 4.5em;
         margin: 0;
       }
       h3 {
@@ -90,7 +91,7 @@
         background: none;
         cursor: pointer;
         &:hover {
-          color: #337ab7;
+          color: orangered;
         }
       }
       .input-field i {
@@ -98,7 +99,7 @@
         position: relative;
         font-size: 14px;
         margin-right: auto;
-        bottom: -20px;
+        bottom: -1em;
       }
       .input-field input[type="text"],
       .password-inpt {
@@ -106,8 +107,9 @@
         border: none;
         margin-top: 10px;
         outline: none;
-        padding: 10px;
+        padding: 1.1em;
         border-radius: 5px;
+        font-size: 5em;
       }
 
       .keep-me-in {
@@ -122,19 +124,20 @@
         align-items: center;
         gap: 0.5cap;
         cursor: pointer;
-        font-size: 12px;
+        font-size: 1em;
       }
       .reset {
+        cursor: pointer;
         margin-left: auto;
       }
       .login-btn {
         width: 100%;
-        padding: 15px;
+        padding: 0.3em;
         border-radius: 5px;
         background: rgba(255, 122, 0, 1);
         box-shadow: 0px 40px 70px 0px rgba(255, 122, 0, 0.1);
         border: none;
-        font-size: 16px;
+        font-size: 1.3em;
         color: #fff;
         cursor: pointer;
       }
@@ -147,16 +150,6 @@
         background-repeat: no-repeat;
         background-position: center;  
         background-size: cover;     
-        /* margin: 0 uto; */
-        @media screen and (25px <= width <=750px) {
-          height: 50px;
-          display: none;
-        }
-        @media screen and (max-width:992px) {
-          height: fit-content;
-          display: none;
-        }
-
       }
       .image-side img {
         width: 100%;
@@ -174,15 +167,16 @@
         border: none;
         max-width: 100%;
         width: 80%;
-        height: 15%;
+        height: 14%;
         display: flex;
-        padding: 10px;
+        padding: 1em;
         background: #fff;
         align-items: center;
         border-radius: 5px;
-         gap: 30px;
-         bottom: -505px;
-         left: 65px;
+         gap: 1.7em;
+         text-align: justify;
+         bottom: -33em;
+         left: 3.5em;
          position: relative;
          .customer-note{
           background: #fff;
@@ -199,6 +193,14 @@
             margin: 0 auto;
             display: block;
             flex-direction: column;
+            .form-side{
+              padding: 2em;
+              margin: auto;
+              padding-top: 4em;
+            }
+          }
+          .image-side{
+            display: none;
           }
           h5{
            font-size: 1.2cap;
@@ -213,4 +215,147 @@
             background: ghostwhite;
             /* padding: 10px; */
           }
+          }
+          /* tablet size */
+        @media screen and (768px <= width <=1023px) {
+          .login-container{
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;
+            display: block;
+            flex-direction: column;
+            .form-side{
+              padding: 2em;
+              margin: auto;
+              padding-top: 4em;
+            }
+          }
+          .image-side{
+            background: none;
+            height: fit-content;
+          }
+          .customer-note-div{
+            height: 8em;
+            background: url(/img/image0.png);
+            position: absolute;
+            bottom: 1.875rem;
+            margin: 0 auto;
+            .customer-note p{
+              font-size: 1.3em;
+              background: #fff;
+              padding: 0.6em;
+            }
+            h5{
+              font-size: 1.5em;
+              left: 0.5em;
+              bottom: -10px;
+              /* position: relative; */
+            }
+            
+          }
+          h5{
+           font-size: 1.2cap;
+           position: relative;
+         }
+          .customer-note p{
+            font-size: 1.2cap;
+            background: #fff;
+          }
+          .note-logo-div{
+            width: 15%;
+            background: ghostwhite;
+            /* padding: 10px; */
+          }
+          .form-side{
+            padding: 20rem;
+          }
+          h3,
+      h4 {
+        font-size: 6.5em;
+      }
+      .input-field input[type="text"],
+      .password-inpt {
+        font-size: 7em;
+      }
+  .logo-img {
+    top:-1em;
+    margin-bottom: 1em;
+    height: 11em;
+  }
+  h2 {
+    font-size: 1.5em;
+}
+          }
+          /* Extra large devices (large desktops, 1400px and below) */
+@media (min-width: 1440px) {
+  /* Styles */
+
+  h3,
+      h4 {
+        font-size: 6.5em;
+      }
+      .input-field input[type="text"],
+      .password-inpt {
+        font-size: 7em;
+      }
+  .logo-img {
+    top:-1em;
+    margin-bottom: 1em;
+    height: 12em;
+  }
+  h2 {
+    font-size: 1.5em;
+}
+.keep, .reset {
+  font-size: 1.5em;
+}
+.customer-note-div{
+  height: 12%;
+  padding: 2em;
+   gap: 2em;
+ }
+.show{
+  font-size: 5.3em;
+}
+ .customer-note p, h5{
+   font-size: 2cap;
+ }
+ .login-btn {
+  padding: 0.7em;
+  font-size: 2em;
+
+}
+.he{
+  font-size: 2em;
+  right: 1.7em;
+  top: 2.5cap;
+}
+.customer-note-div{
+  bottom: -43em;
+}
+}
+
+/* 2K Screens (2048px and below) */
+@media (max-width: 2048px) {
+  /* Styles */
+}
+
+/* 4K Screens (3840px and below) */
+@media (max-width: 3840px) {
+  /* Styles */
+}
+
+/* 5K Screens (5120px and below) */
+@media (max-width: 5120px) {
+  /* Styles */
+}
+
+/* 6K Screens (6144px and below) */
+@media (max-width: 6144px) {
+  /* Styles */
+}
+
+/* 8K Screens (7680px and below) */
+@media (max-width: 7680px) {
+  /* Styles */
 }
